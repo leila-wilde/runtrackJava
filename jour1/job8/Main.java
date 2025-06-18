@@ -10,12 +10,30 @@ public class Main {
     static public void main(String[] args) {
         // Create a scanner object 
         Scanner scanner = new Scanner(System.in);
+        int n =0;
+        boolean validInput = false;
 
-        // Ask the user to provide an integer n
-        System.out.println("Saissisez un nombre entier : ");
+        
+        // Loop until valid integer is given
+        while (!validInput) {
+            try {
+                // Ask the user to provide an integer n
+                System.out.println("Saissisez un nombre entier : ");
 
-        // Read user input
-        int n = scanner.nextInt();
+                // Read user input
+                n = scanner.nextInt();
+
+                // Check if the input n is a positive integer
+                if (n < 1) {
+                    System.out.println("Veuillez saisir un nombre entier positif.");
+                } else {
+                    validInput = true;
+                }
+            } catch (Exception e) {
+                System.out.println("Veuillez saisir un nombre entier valide.");
+                scanner.nextLine(); // Clear the invalid input
+            }   
+        } 
 
         // Calculate the sum of the cubes of the first n integers
         int sum = 0;
