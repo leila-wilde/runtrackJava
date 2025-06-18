@@ -1,3 +1,7 @@
+/*
+A Java program that calculates the sum of the first 100 integers.
+ */
+
 public class Main {
     static public void main(String[] args) {
         // Initialize the sum variable
