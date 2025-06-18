@@ -3,7 +3,6 @@ A Java program that asks the user to enter an integer n
 and displays the sum of the first n cubes.
 */
 
-
 import java.util.Scanner;
 
 public class Main {
@@ -12,7 +11,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int n =0;
         boolean validInput = false;
-
         
         // Loop until valid integer is given
         while (!validInput) {
