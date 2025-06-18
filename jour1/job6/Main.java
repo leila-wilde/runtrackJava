@@ -25,10 +25,9 @@ public class Main {
                 }
             } 
         }
-            
         
         // Calculate the average
-        double average = (double) sum / 5;
+        float average = (float) sum / 5;
 
         // Print the average
         System.out.println("Le moyenne est " + average);

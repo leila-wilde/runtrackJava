@@ -1,5 +1,6 @@
 /*
 A Java program that calculates the factorial of 8.
+8! = 1*2*3*4*5*6*7*8
  */
 
 public class Main {
@@ -10,7 +11,7 @@ public class Main {
             // Calculate the factorial by multiplying the current number by the previous factorial
             factorial *= i;
         }
-        
+
         System.out.println("Le factorielle de 8 est " + factorial);
     }
 }
