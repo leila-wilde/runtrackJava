@@ -13,11 +13,19 @@ public class Main {
         
         // Read the five numbers
         for (int i=0; i<5; i++) {
-            System.out.print("Entrez le nombre " + (i+1) + " : ");
-            number = scanner.nextInt();
-            sum += number;  
-
-        } 
+            while(true) {
+                System.out.print("Entrez le nombre " + (i+1) + " : ");
+                try {
+                    number = scanner.nextInt();
+                    sum += number;
+                    break; // exit loop if input is valid
+                } catch (Exception e) {
+                    System.out.println("Veuillez entrer un nombre entier valide.");
+                    scanner.nextLine(); // clear the input buffer
+                }
+            } 
+        }
+            
         
         // Calculate the average
         double average = (double) sum / 5;
